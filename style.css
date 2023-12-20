@@ -211,6 +211,8 @@ header {
 @media (max-width: 1100px) {
     header {
         width: auto;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 
     .divider {
@@ -247,6 +249,10 @@ header {
 }
 
 @media (max-width: 520px) {
+    .first-box {
+        height: 10rem;
+    }
+
     .header-h1{
         font-size: 5rem;
     }
