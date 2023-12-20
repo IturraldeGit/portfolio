@@ -87,8 +87,14 @@ header {
     margin-left: 10rem;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .first-box {
-    height: 20rem;
+    height: 15rem;
 }
 
 .divider {
@@ -115,7 +121,7 @@ header {
     color: var(--pink);
 }
 
-h1 {
+.header-h1 {
     font-size: 8rem;
     font-family: var(--poppins);
     font-weight: var(--black-font);
@@ -125,6 +131,8 @@ h1 {
 .header-bottom {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: auto;
 }
 
 .header-div {
@@ -150,7 +158,6 @@ h1 {
     background-color: var(--pink);
     height: 5rem;
     width: 30rem;
-    margin-left: 20rem;
     border: 1px solid transparent;
     border-radius: .75rem;
     box-sizing: border-box;
@@ -180,6 +187,11 @@ h1 {
     outline-offset: 2px;
 }
 
+.header-info-icons {
+    display: flex;
+    flex-direction: row;
+}
+
 .header-logo {
     height: 4rem;
     margin-right: 1rem;
@@ -193,5 +205,70 @@ h1 {
 @media (min-width: 768px) {
     .header-proyects {
         padding: .75rem 1.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    header {
+        width: auto;
+    }
+
+    .divider {
+        width: auto;
+        margin-right: 10rem;
+    }
+
+    .header-bottom {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .header-top {
+        font-size: 3rem;
+    }
+
+    .header-experience {
+        font-size: 2rem;
+    }
+
+    .header-h1{
+        font-size: 7rem;
+    }
+    
+    .header-bottom {
+        flex-direction: column;
+    }
+
+    .header-info {
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-h1{
+        font-size: 5rem;
+    }
+
+    .header-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-info-icons {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .header-logo-2 {
+        margin-left: 0;
+        margin-right: 2rem;
     }
 }
