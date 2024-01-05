@@ -26,15 +26,18 @@ function navigator() {
 }
 
 function home() {
-    header.classList.remove('--inactive')
+    header.classList.remove('--inactive');
+    aboutMeSection.classList.add('--inactive');
 }
 
 function aboutMe() {
     backwardsArrow.classList.remove('--inactive');
     header.classList.add('--inactive');
+    aboutMeSection.classList.remove('--inactive');
 }
 
 function proyects() {
     backwardsArrow.classList.remove('--inactive');
     header.classList.add('--inactive');
+    aboutMeSection.classList.add('--inactive');
 }
