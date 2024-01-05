@@ -277,6 +277,55 @@ header {
     margin-bottom: 2rem;
 }
 
+.proyects {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.proyects-movie-card {
+    max-width: 23rem;
+}
+
+.proyects-movie-img {
+    width: 23rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-card-container {
+    background-color: var(--shadow-pink);
+    margin-top: 0;
+    padding: 1rem 1rem 0.4rem 1rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.movie-card-container p {
+    font-family: var(--poppins);
+    color: var(--white);
+    margin-bottom: 0.2rem;
+}
+
+.movie-title {
+    font-weight: var(--bold);
+    font-size: 1.3rem;
+}
+
+.movie-logo-container {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.movie-app-logo {
+    height: 2.5rem;
+    margin-left: 1rem;
+}
 
 @media (min-width: 768px) {
     .header-proyects {
