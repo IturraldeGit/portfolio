@@ -15,6 +15,19 @@ headerProyectsButton.addEventListener('click', () => {
     location.hash = '#proyects';
 })
 
+movieApp.addEventListener('click', () => {
+    window.open('https://iturraldegit.github.io/movie-app/')
+})
+todosApp.addEventListener('click', () => {
+    window.open('https://iturraldegit.github.io/todo-list-app/')
+})
+travelSite.addEventListener('click', () => {
+    window.open('https://iturraldegit.github.io/CursoDeTailwind/')
+})
+storeApp.addEventListener('click', () => {
+    window.open('https://quiet-scone-6eb339.netlify.app/')
+})
+
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 
@@ -47,3 +60,4 @@ function proyects() {
     aboutMeSection.classList.add('--inactive');
     proyectsSection.classList.remove('--inactive');
 }
+

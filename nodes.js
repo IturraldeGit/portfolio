@@ -13,3 +13,11 @@ const aboutMeSection = document.querySelector('.about-me');
 const proyectsSection = document.querySelector('.proyects');
 
 const headerProyectsButton = document.querySelector('.header-button-proyects');
+
+const movieApp = document.querySelector('.movie-app');
+
+const todosApp = document.querySelector('.todos-app');
+
+const travelSite = document.querySelector('.travel-site');
+
+const storeApp = document.querySelector('.store-app');
