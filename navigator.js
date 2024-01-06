@@ -11,6 +11,9 @@ backwardsArrow.addEventListener('click', () => {
     backwardsArrow.classList.add('--inactive');
     location.hash = '#home';
 })
+headerProyectsButton.addEventListener('click', () => {
+    location.hash = '#proyects';
+})
 
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
@@ -28,16 +31,19 @@ function navigator() {
 function home() {
     header.classList.remove('--inactive');
     aboutMeSection.classList.add('--inactive');
+    proyectsSection.classList.add('--inactive');
 }
 
 function aboutMe() {
     backwardsArrow.classList.remove('--inactive');
     header.classList.add('--inactive');
     aboutMeSection.classList.remove('--inactive');
+    proyectsSection.classList.add('--inactive');
 }
 
 function proyects() {
     backwardsArrow.classList.remove('--inactive');
     header.classList.add('--inactive');
     aboutMeSection.classList.add('--inactive');
+    proyectsSection.classList.remove('--inactive');
 }

@@ -38,7 +38,7 @@ body {
 .background {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 200%;
     overflow: hidden;
     z-index: 1;
 }
@@ -72,7 +72,7 @@ body {
 
 @keyframes animate {
     0% {
-        transform: translateY(100vh) scale(0);
+        transform: translateY(150vh) scale(0);
     }
     100% {
         transform: translateY(-10vh) scale(1);
@@ -279,16 +279,18 @@ header {
 
 .proyects {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     z-index: 2;
+    margin: 0 20rem;
 }
 
-.proyects-movie-card {
+.proyects-single-card {
     max-width: 23rem;
 }
 
-.proyects-movie-img {
+.proyects-card-img {
     width: 23rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -296,25 +298,25 @@ header {
     margin: 0;
 }
 
-.movie-card-container {
+.single-card-container {
     background-color: var(--shadow-pink);
     margin-top: 0;
     padding: 1rem 1rem 0.4rem 1rem;
     border-bottom-left-radius: 4rem;
 }
 
-.movie-card-container p {
+.single-card-container p {
     font-family: var(--poppins);
     color: var(--white);
     margin-bottom: 0.2rem;
 }
 
-.movie-title {
+.proyect-title {
     font-weight: var(--bold);
     font-size: 1.3rem;
 }
 
-.movie-logo-container {
+.proyects-logo-container {
     margin-top: 1rem;
     display: flex;
     width: 100%;
@@ -322,7 +324,7 @@ header {
     justify-content: end;
 }
 
-.movie-app-logo {
+.proyects-app-logo {
     height: 2.5rem;
     margin-left: 1rem;
 }
