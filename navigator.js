@@ -14,6 +14,14 @@ backwardsArrow.addEventListener('click', () => {
 headerProyectsButton.addEventListener('click', () => {
     location.hash = '#proyects';
 })
+sideMenuX.addEventListener('click', () => {
+    asideMenu.classList.add('--inactive');
+    menuHam.classList.remove('--inactive');
+})
+menuHam.addEventListener('click', () => {
+    asideMenu.classList.remove('--inactive');
+    menuHam.classList.add('--inactive');
+})
 
 movieApp.addEventListener('click', () => {
     window.open('https://iturraldegit.github.io/movie-app/')
@@ -45,6 +53,7 @@ function home() {
     header.classList.remove('--inactive');
     aboutMeSection.classList.add('--inactive');
     proyectsSection.classList.add('--inactive');
+    hamButton.classList.add('ham-button-alone');
 }
 
 function aboutMe() {
@@ -52,6 +61,7 @@ function aboutMe() {
     header.classList.add('--inactive');
     aboutMeSection.classList.remove('--inactive');
     proyectsSection.classList.add('--inactive');
+    hamButton.classList.remove('ham-button-alone');
 }
 
 function proyects() {
@@ -59,5 +69,6 @@ function proyects() {
     header.classList.add('--inactive');
     aboutMeSection.classList.add('--inactive');
     proyectsSection.classList.remove('--inactive');
+    hamButton.classList.remove('ham-button-alone');
 }
 

@@ -18,6 +18,7 @@ html {
     --shadow-pink: #FF308544;
     --blue: #2A5E96;
     --dark-blue: #0c192c;
+    --light-black: rgba(0, 0, 0, 0.8)
 
     --poppins: 'Poppins', sans-serif;
 
@@ -72,7 +73,7 @@ body {
 
 @keyframes animate {
     0% {
-        transform: translateY(150vh) scale(0);
+        transform: translateY(100vh) scale(0);
     }
     100% {
         transform: translateY(-10vh) scale(1);
@@ -101,6 +102,26 @@ menu {
     cursor: pointer;
 }
 
+.ham-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-ham {
+    height: 4rem;
+    margin-right: 4rem;
+    display: none;
+}
+
+.menu-ham:hover {
+    cursor: pointer;
+}
+
+.ham-button-alone {
+    justify-content: end;
+}
+
 .menu-ul {
     display: flex;
     flex-direction: row;
@@ -119,6 +140,53 @@ menu {
 
 .menu-item:hover {
     color: var(--pink);
+    cursor: pointer;
+}
+
+.aside-menu {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.side-menu {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-list {
+    list-style-type: none;
+    height: 30rem;
+    width: 15rem;
+}
+
+.side-menu-item {
+    font-family: var(--poppins);
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: var(--regular);
+    text-decoration: none;
+    margin-bottom: 6rem;
+}
+
+.side-menu-item:hover {
+    cursor: pointer;
+}
+
+.side-menu-x {
+    height: 4rem;
+    position: fixed;
+    top: 2rem;
+    right: 20rem;
+}
+
+.side-menu-x:hover {
     cursor: pointer;
 }
 
@@ -353,6 +421,14 @@ header {
 
     .header-bottom {
         margin-right: 10rem;
+    }
+
+    .menu-ham {
+        display: block;
+    }
+
+    .menu-ul {
+        display: none;
     }
 }
 

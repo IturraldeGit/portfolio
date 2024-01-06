@@ -21,3 +21,11 @@ const todosApp = document.querySelector('.todos-app');
 const travelSite = document.querySelector('.travel-site');
 
 const storeApp = document.querySelector('.store-app');
+
+const hamButton = document.querySelector('.ham-button');
+
+const sideMenuX = document.querySelector('.side-menu-x');
+
+const asideMenu = document.querySelector('.aside-menu');
+
+const menuHam = document.querySelector('.menu-ham');
