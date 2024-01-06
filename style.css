@@ -356,6 +356,7 @@ header {
 
 .proyects-single-card {
     max-width: 23rem;
+    margin-bottom: 2rem;
 }
 
 .proyects-single-card:hover {
@@ -452,6 +453,13 @@ header {
     .header-info {
         margin-top: 2rem;
         margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 873px) {
+    .proyects {
+        align-items: center;
+        justify-content: center;
     }
 }
 
