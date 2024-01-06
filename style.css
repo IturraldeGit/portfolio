@@ -307,6 +307,11 @@ header {
     margin-right: 1rem;
     margin-left: 1rem;
 }
+
+.header-tech {
+    margin-bottom: 2rem;
+}
+
 .header-logo-2 {
     height: 4rem;
     margin-left: 2rem;
