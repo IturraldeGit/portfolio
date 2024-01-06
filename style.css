@@ -173,6 +173,8 @@ menu {
     font-weight: var(--regular);
     text-decoration: none;
     margin-bottom: 6rem;
+    background-color: transparent;
+    border: none;
 }
 
 .side-menu-item:hover {
